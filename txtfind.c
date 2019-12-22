@@ -84,8 +84,9 @@ int similar(char *s, char *t, int n){
 
 void print_lines(char* str){
   char line[LINE];
-
-  scanf("%s",line); // skip line
+  
+  fgets(line, LINE, stdin); // skip line
+  fgets(line, LINE, stdin); // skip line
 
   printf("Enter the lines: \n");
   while(getLine(line) > 0){
@@ -97,8 +98,8 @@ void print_lines(char* str){
 void print_similar_words(char* str){
   char word[WORD];
 
-  scanf("%s",word); // skip line
-  getchar(); // skip line
+  fgets(word, WORD, stdin); // skip line
+  fgets(word, WORD, stdin); // skip line
 
   printf("Enter the words: \n");
   while(getword(word) > 0){
